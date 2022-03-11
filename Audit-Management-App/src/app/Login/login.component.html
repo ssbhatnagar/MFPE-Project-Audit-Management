@@ -1,0 +1,21 @@
+<!-- Header -->
+<app-nav-header></app-nav-header>
+<!-- Component Body -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card rounded">
+                <form class="box" autocomplete="off" (ngSubmit)="onLogIn()">
+                    <!-- <h1>Login</h1> -->
+                    <p class="text-muted"> Please Enter Your Username and Password!</p> 
+                    <input type="text" [(ngModel)]="username" name="username" placeholder="UserName" required> 
+                    <input type="password" [(ngModel)]="password" name="password" placeholder="Password" required>  
+                    <input type="submit" name="" value="Login">
+                </form>
+            </div>
+            <div class="alert alert-danger error-message" role="alert" *ngIf="message.length>0">
+                {{ message }}
+            </div>
+        </div>
+    </div>
+</div>    

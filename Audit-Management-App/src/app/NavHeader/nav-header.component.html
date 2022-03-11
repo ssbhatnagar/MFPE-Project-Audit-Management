@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- Header -->
+<header>
+    <div class="nav text-allign-center">
+        <!-- <img src="assets/icon/appLogo.jpg" alt="LOGO" height="90%"> -->
+        <h3 class="headerTitle">Welcome to Audit Management</h3>
+        <!-- NAV -->
+        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item"  *ngIf="!user.logStatus">
+                  <a class="nav-link text-light px-2 mx-2" routerLink="../login">Login</a>
+                </li>
+                <li class="nav-item" *ngIf="user.logStatus">
+                  <a class="nav-link text-light px-2 mx-2" routerLink="../checklist">Checklist</a>
+                </li>
+              </ul>
+            </div>
+          </nav> -->
+        <!-- user-info -->
+        <img class="username-pic" *ngIf="user.logStatus" src="https://img.icons8.com/officel/16/000000/user.png" alt="LOGO"  height="90%">
+        <div class="userInfo" *ngIf="user.logStatus">
+            <h6>{{ user.username | titlecase }}</h6>
+        </div>
+        <!-- logout -->
+        <input class="logout-pic" *ngIf="user.logStatus" type="image" src="https://img.icons8.com/dusk/64/000000/logout-rounded-left.png" title="Logout" alt="Logout" width="48" height="48" (click)="logout()">
+        
+    </div>
+</header>

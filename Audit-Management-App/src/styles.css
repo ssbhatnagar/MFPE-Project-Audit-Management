@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';    /* Bootstrap */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(to right, skyblue, powderblue, lightgreen)
+    /* background-image: url("/Audit-Management-App/src/assets/icon/MicrosoftTeams-image.png"); */
+}
